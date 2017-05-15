@@ -1,0 +1,57 @@
+.inner_c{
+	width: 100%;
+}
+.logo{
+	float: none;
+	margin: 0 auto;
+	width: 160px;
+	overflow: hidden;
+	padding-left:0;
+	padding-top: 12px;
+}
+.logo h1{
+	background-image: url(../images/icons@2x.png);
+	background-size: 471px 324px;
+}
+.header .nav{
+	width: 87.5%;
+	margin-left: 0;
+}
+.joinus{
+	width: 12.5%;
+	padding: 0;
+}
+.header .nav ul li{
+	width: 14.28571%;
+	box-sizing:border-box;
+}
+.joinus a{
+	width: 100%;
+	background: none;
+	text-indent: 0em;
+	height: 58px;
+	line-height: 58px;
+	text-align: center;
+	color:yellow;
+	animation:bling 0.4s linear 0s infinite alternate;
+	text-decoration: none;
+}
+@-webkit-keyframes bling{
+	from{
+		color:yellowgreen;
+	}
+	to{
+		color:gold;
+	}
+}
+
+
+.footer .copyright{
+	float:none;
+}
+.footer .links{
+	float: none;
+}
+.footer{
+	line-height: 30px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>手机淘宝网 - 淘你喜欢</title>
+	<link rel="stylesheet" href="css/cssreset-min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript">
+        function setHTMLFontSise(){
+            var windowWidth = document.documentElement.clientWidth;
+            //判断视口宽度是不是已经大于了最大版心
+            if(windowWidth > 540){
+                document.documentElement.style.fontSize = "20px";
+            }else if(windowWidth < 320){
+                //判断视口宽度是不是已经小于了最大版心
+                document.documentElement.style.fontSize = 320 / 540 * 20 + "px";
+
+            }else{
+                document.documentElement.style.fontSize =  windowWidth / 540 * 20 + "px";
+            }
+
+        }
+
+        window.onresize = setHTMLFontSise;
+        setHTMLFontSise();
+	</script>
+</head>
+<body>
+<header>
+	<div class="soso" data-herf="http://m.taobao.com">
+		<span>寻找宝贝店铺</span>
+	</div>
+</header>
+
+<section class="content">
+	<div class="banner1"></div>
+	<div class="banner2">
+		<ul>
+			<li class="i1"><a href="">天猫</a></li>
+			<li class="i2"><a href="">天猫</a></li>
+			<li class="i3"><a href="">天猫</a></li>
+			<li class="i1"><a href="">聚划算</a></li>
+			<li class="i2"><a href="">天猫</a></li>
+			<li class="i3"><a href="">天猫</a></li>
+			<li class="i1"><a href="">天猫</a></li>
+			<li class="i2"><a href="">天猫</a></li>
+			<li class="i3"><a href="">天猫</a></li>
+			<li class="i1"><a href="">天猫</a></li>
+		</ul>
+
+		<div class="taobaotoutiao">
+			<h3>淘宝头条</h3>
+			<a href="">
+				<span class="toutiao_icon">热议</span>
+				<span class="toutiao_title">颤抖吧！！鸡年中国风来了！</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="box_buy">
+		<p>
+			<img src="images/b1.jpg" alt="">
+		</p>
+		<p><img src="images/b2.jpg" alt=""></p>
+		<p><img src="images/b3.png" alt=""></p>
+		<p><img src="images/b4.jpg" alt=""></p>
+		<p><img src="images/b5.png" alt=""></p>
+	</div>
+</section>
+
+<footer>
+	<a href="#">首页</a>
+	<a href="#">物流</a>
+	<a href="#">购物车</a>
+	<a href="#">我的淘宝</a>
+	<a href="#">更多</a>
+</footer>
+<script>
+	var herfBoxs = document.querySelectorAll("[data-herf]");
+	for(var i=0;i<herfBoxs.length;i++){
+        herfBoxs[i].index = i;
+        herfBoxs[i].addEventListener("touchstart",function(){
+            window.location = this.getAttribute("data-herf");
+		},true)
+	}
+</script>
+</body>
+</html>

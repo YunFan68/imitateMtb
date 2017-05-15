@@ -1,0 +1,101 @@
+html{
+	font-size: 20px;
+}
+.banner{
+	display: none;
+}
+ 
+ .swipe {
+ 	display: block;
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap  > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+.swipe{
+	width: 100%;
+}
+.swipe img{
+	width: 100%;
+}
+.circles{
+	position: absolute;
+	width: 124px;
+	height: 12px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -47px;
+}
+.circles ol{
+	list-style: none;
+}
+.circles ol li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	background: orange;
+	border-radius: 50%;
+	/*鼠标碰上去是小手*/
+	cursor: pointer;
+}
+.circles ol li.cur{
+	background:red;
+}
+
+.product .circles{
+	display: none;
+}
+.product{
+	overflow: hidden;
+	padding-top: 20px;
+}
+ 
+.information .news{
+	float:none;
+	width: 100%;
+}
+.information .news .hd{
+	background-size:cover;
+}
+.information .more{
+	display: none;
+}
+.information .news ul li a{
+	font-size: 16px;
+}
+.information .jobs{
+	background-size:cover;
+}
+.information .jobs{
+	float: none;
+	width: 100%;
+}
+.information{
+	height: 620px;
+}
+.date{
+	float: left;
+}
+.title{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	width: 80%;
+	float: left;
+}
+.news{
+	overflow: hidden;
+}
+.news ul li{
+	overflow: hidden;
+}
